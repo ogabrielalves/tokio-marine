@@ -21,7 +21,7 @@ public class TransferController {
     }
 
     @PostMapping
-    public ResponseEntity<Transfer> schedule(@Valid @RequestBody TransferRequest request) {
+    public ResponseEntity<String> schedule(@Valid @RequestBody TransferRequest request) {
         return transferService.schedule(request);
     }
 
