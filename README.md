@@ -91,6 +91,30 @@ Para executar o projeto, siga os passos abaixo para o backend e o frontend separ
 
     O frontend estará disponível em `http://localhost:5173` 
 
+## Executando o Projeto com Docker
+
+Se você não quiser instalar Java, Maven ou Node.js localmente, é possível rodar o projeto usando Docker e Docker Compose.
+
+### Pré-requisitos
+
+- **Docker 24 ou superior**
+- **Docker Compose**
+
+### Passos
+
+1. Clonar o repositório:
+
+ ```bash
+git clone https://github.com/ogabrielalves/tokio-marine.git
+cd toki-marine
+ ```
+
+2. Construir e subir os containers:
+
+ ```bash
+docker-compose up --build -d
+ ```
+
 ## Endpoints da API (Backend)
 
 O backend expõe os seguintes endpoints:
